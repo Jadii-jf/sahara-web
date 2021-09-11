@@ -1,0 +1,491 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.full_main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+       background-image: url('frederik-lower-XCkem83mRlM-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.back_trans{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:black ;
+    opacity: 0.6;
+    z-index: 0;
+}
+a{
+    font-family: 'Leckerli One', cursive;
+    margin: 0px 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+a:hover{
+    transition: 0.3s all;
+    border-bottom: 3px solid whitesmoke;
+}
+/* Header */
+header{
+    display: flex;
+    padding: 10px 80px;
+    color: white;
+    justify-content: space-between;
+    opacity: 0.9;
+    z-index: 1111;
+}
+.horse_logo{
+width: 40px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+list-style-type: none;
+}
+
+
+
+/* Bars */
+
+
+.bars{
+    
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+}
+.bars_line{
+    display: block;
+    background: black;
+    width: 26px;
+    height: 1.3px; 
+
+}
+
+
+
+/* Main Right */
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    padding: 0px 8%;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+/* Left side */
+
+.left{
+    color: white;
+width: 50%;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.sahara{
+
+}
+.sahara_h1{
+    font-size: 100px;
+    font-weight: bolder;
+}
+.lorem{
+margin: 40px 0px;
+}
+.lorem_p{
+font-size: 18px;
+}
+.explore{
+
+}
+.exp_btn{
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    padding: 14px 100px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.exp_btn:hover{
+    background-color: teal;
+    color: white;
+    transition: 0.3s;
+}
+/* Right side */
+
+.slide_box{
+    width: 70%;
+}
+.right{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.img_box{
+    margin: 20px;
+ color: white;
+ padding: 10px;
+    width: 260px;
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.show{
+    position: absolute;
+    width:260px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+.img_box:hover{
+    
+}
+.img_opacity{
+    position: absolute;
+    z-index: 1;
+    
+}
+.img_box:hover{
+    transform: translateY(-20px);
+    transition: 0.7s ease-in-out;
+}
+.img_box_1{
+    
+    background: url("spencer-davis-I4VkLBwsa9s-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.img_box_2{
+    background: url("xavier-coiffic-GMMGy17pXUw-unsplash.jpg");
+    background-position: center;
+    background-size: contain;
+}
+.img_box_3{
+    
+    background: url("gayatri-malhotra-CqpuJml_Fzo-unsplash.jpg");
+background-position: center;
+    background-size: contain;}
+.img_box_4{
+    
+    background: url("annie-spratt-aNm2o1Uj6FI-unsplash.jpg");
+background-position: center;
+    background-size: contain;
+}
+
+
+
+
+/* Main after  Hitchhiker*/
+
+.hitch_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.main_after{
+    width: 80%;
+    margin: 0px auto;
+    height: 400px;
+    border: 1px solid aquamarine;
+}
+.top_hitch{
+    margin: 50px 30%;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hitch{
+    margin: 0px 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hitch_pic{
+    text-align: center;
+}
+
+
+
+/* Temples section */
+
+.temple{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+background-color: white;
+height: 600px;
+position: relative;
+}
+.temple::before{
+    content: "";
+position: absolute;
+left: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#f00,#f0f);
+}
+
+.temple_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.temple_box{
+    z-index: 0;
+width: 300px;
+height: 400px;
+background-color: burlywood;
+position: relative;
+transform-style: preserve-3d;
+background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: stretch;
+}
+.temple_box:hover{
+    background-color: #f0f;
+}
+.temple_box:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.5s;
+}
+.temp_img_1{
+    background-image: url("/sahara/The-Temple-of-Hibis-in-Kharga-Oasis-Egypt-Photo-by-A-Sartan.jpg");
+}
+.temp_img_2
+{
+    background-image: url("/sahara/Temple-of-Qasr-Dusch-Kharga-Oasis-view.jpg");
+}
+.temp_img_3
+{
+background-image: url("/sahara/Temple-of-Amun-view-to-the-north-Aghurmi-Siwa-Photo-by-Roland-Unger.jpg");
+}
+.temple_box::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#f00,#f0f);
+    top: 20px;
+    left: -20px;
+    transform: translateZ(-1px);
+    z-index: 1;
+    border-radius: 15px;
+    cursor: pointer;
+   
+}
+.temple_box::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: #f00;
+    top: 30px;
+    left: -30px;
+    transform:translateZ(-1px);
+    border-radius: 15px;
+}
+.content{
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: snow;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.content_h1
+{
+    transform: translateY(-100px);
+}
+.content_p
+{
+    
+}
+.content_btn
+{
+    outline: none;
+    border: none;
+    offset: none;
+    font-size: 25px;
+    padding: 9px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.content_btn:hover{
+    background: #f00;
+    color: #f0f;
+    
+}
+/* Line box */
+.line_box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    opacity: 0;
+}
+.line{
+    width: 40px;
+    height: 5px;
+    background: linear-gradient(#f00,#f0f);
+    opacity: 0;
+    border-radius: 20px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:1150px){
+    .temple{
+        overflow-x: hidden;
+    }
+   
+    .temple_slide{
+        overflow-x: hidden;
+        height: 430px;
+        width: 500px;
+        overflow: hidden;
+        margin: 0 auto;
+
+    }
+    .temple_container{
+width: 400%;
+justify-content: space-around;
+    }
+    .temple_box{
+
+    }
+    .line_box{
+opacity: 1;
+    }
+    .line{
+        opacity: 0.1;
+    }
+}
+@media only screen and (max-width: 1000px) {
+.full_main{
+    background-position: inherit;
+}
+  }
+
+  @media  only screen and (max-width:700px) {
+      .bars{
+          display: flex;
+      }
+      ul{
+          display: none;
+      }
+  }
+
+  @media only screen and (max-width:1260px){
+      .right{
+      }
+      .img_box{
+          margin: 20px 0px;
+      } 
+      .right{
+          flex-wrap: nowrap;
+          width: 1200px;
+          transform: translateX(0px);
+      }
+      .circle_box{
+          display: block;
+          display: flex;
+        margin-left: 30%;
+        margin-top: 40px;
+      }
+      .circle{
+          display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: blanchedalmond;
+        opacity: 0.2;
+        margin: 0px 10px;
+      }
+      .slide_box{
+overflow:hidden;
+transform: translate(4px ,121px);
+      }
+      .slide_box_2{
+        overflow: hidden;
+        width: 300px;
+        margin-left: 17%;
+      }
+  }
+
+
+
+  
+@media only screen and (max-width:870px) {
+
+    .circle_box{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .right{
+flex-direction: column;
+    }
+    .slide_box{
+        height: 660px;
+        transform: translateX(24px);
+    }
+    .slide_box_2{
+
+    }
+    .column{
+        
+    }
+
+}
+
